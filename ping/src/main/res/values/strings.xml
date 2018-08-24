@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ping</string>
+    <string name="login">登录第一航空通信</string>
+    <string name="qianzhui">+86</string>
+    <string name="houzhui">输入手机号</string>
+    <string name="yanzhengma">验证码</string>
+    <string name="huoquyanzhengma">获取验证码</string>
+    <string name="weizhuce">未注册的用户请先登录</string>
+    <string name="denglu">登录</string>
+    <string name="yinsixieyi">我已阅读并同意遵守 “用户协议”和 “隐私条款”</string>
+</resources>

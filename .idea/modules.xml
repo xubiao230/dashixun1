@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baifenbi/baifenbi.iml" filepath="$PROJECT_DIR$/baifenbi/baifenbi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dashixun.iml" filepath="$PROJECT_DIR$/dashixun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ping/ping.iml" filepath="$PROJECT_DIR$/ping/ping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pingmu/pingmu.iml" filepath="$PROJECT_DIR$/pingmu/pingmu.iml" />
+    </modules>
+  </component>
+</project>

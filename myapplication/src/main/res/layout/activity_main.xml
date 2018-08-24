@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tooBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="充值提交"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tooBar">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单信息:"
+            android:textColor="#333"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_marginTop="20dp"
+            android:text="应付金额:"
+            android:textColor="#999"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/tv2"
+            android:layout_toRightOf="@+id/tv2"
+            android:text="￥600"
+            android:textColor="#333"
+            android:textSize="28sp" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginTop="20dp"
+            android:text="订单信息:"
+            android:textColor="#999"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv3"
+            android:layout_centerHorizontal="true"
+            android:text="充值600金币"
+            android:textColor="#333"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mtv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:text="选择支付方式"
+        android:textColor="#999"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+
+        android:src="@mipmap/icon_chongzhitijiao_zhifubao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtv"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/mtv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="支付宝支付"
+        android:textColor="#333"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/mimg"
+        app:layout_constraintTop_toBottomOf="@+id/mtv"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="38dp" />
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/icon_chongzhitijiao_wechats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/mimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:layout_marginTop="27dp"
+        android:src="@mipmap/iocn_gou_selected"
+        app:layout_constraintEnd_toEndOf="@+id/mtv"
+        app:layout_constraintTop_toBottomOf="@+id/mtv"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/mtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="微信支付"
+        android:textColor="#333"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/mtv1"
+        app:layout_constraintTop_toBottomOf="@+id/mtv1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/mimg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="23dp"
+        android:src="@mipmap/iocn_gou_selected"
+        app:layout_constraintEnd_toEndOf="@+id/mimg"
+        app:layout_constraintTop_toBottomOf="@+id/mtv1"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@mipmap/icon_chongzhitijiao_lianlian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/mtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="连连支付"
+        android:textColor="#333"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/mtv2"
+        app:layout_constraintTop_toBottomOf="@+id/mtv2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/mimg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:src="@mipmap/iocn_gou_selected"
+        app:layout_constraintEnd_toStartOf="@+id/mtv4"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mtv4" />
+
+    <TextView
+        android:id="@+id/mtv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="我已阅读并遵守同意《充值协议》，并愿意承担风险。"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mimg2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:background="#FF8569"
+        android:text="立即支付"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
